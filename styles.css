@@ -1,1 +1,42 @@
 @import "./vars.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+section {
+}
+
+nav {
+}
+
+footer {
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+p {
+}
+
+label {
+}
+
+input {
+}
+
+a {
+}
+
+button {
+}
