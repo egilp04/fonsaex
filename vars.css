@@ -43,6 +43,7 @@
   --input-md-x: 0.625rem;
   --input-lg-y: 0.5rem;
   --input-lg-x: 0.875rem;
+  --gap-checkbox: 0.625rem;
 
   --font-button-s: 0.875rem;
   --font-button-md: 1rem;
@@ -72,6 +73,7 @@
   --nav-right-lg: 0.5rem;
   --nav-top-lg: 0.25rem;
   --nav-bottom-lg: 0.125rem;
+  --margin-nav-home-lg-left: 0.625rem;
 
   --font-footer: "Poppins", sans-serif;
   --font-weight-footer: medium;
@@ -79,24 +81,91 @@
   --font-footer-md: 1.25rem;
   --font-footer-lg: 1.5rem;
   --letter-spacing-footer-s: 0.03125rem;
-  --line-height-footer-s: 1.5rem;
-  --line-height-footer-m: 1.75rem;
-  --line-height-footer-l: 1.875rem;
+  --line-height-footer-s: 1rem;
+  --line-height-footer-m: 1.25rem;
+  --line-height-footer-l: 1.5rem;
   --padding-footer-sm: 0.625rem;
   --padding-footer-md: 0.625rem;
   --padding-footer-lg: 0.625rem;
 
-  --card-img-padding-sm: 1.875rem;
-  --card-img-padding-md: 2.5rem;
-  --card-img-padding-lg: 3.125rem;
-  --card-footer-padding-sm: 1.875rem;
-  --card-footer-padding-md: 1.875rem;
-  --card-footer-padding-lg: 1.875rem;
+  --card-img-padding-x-sm: 1.875rem;
+  --card-img-padding-x-md: 2.5rem;
+  --card-img-padding-x-lg: 3.125rem;
+  --card-footer-padding-y-sm: 1.875rem;
+  --card-footer-padding-y-md: 1.875rem;
+  --card-footer-padding-y-lg: 1.875rem;
   --card-font-family: "Poppins", sans-serif;
   --card-font-weight: normal;
   --card-font-size-sm: 1.5rem;
   --card-font-size-md: 2rem;
   --card-font-size-lg: 2.25rem;
+
+  --margin-hero-home-sm: 0.625rem;
+  --hero-gap-sm: 0.625rem;
+  --margin-services-home-sm: 1.25rem;
+  --gap-services-home-sm: 1.25rem;
+
+  --margin-hero-home-md: 1.5rem;
+  --hero-gap-md: 1.25rem;
+  --margin-services-home-md: 1.5rem;
+  --gap-services-home-md: 1.5rem;
+
+  --margin-hero-home-lg-x: 2.5rem;
+  --margin-hero-home-lg-y: 0.625rem;
+  --hero-gap-lg: 0.625rem;
+  --margin-services-home-lg-x: 2.5rem;
+  --margin-services-home-lg-y: 1.25rem;
+  --gap-services-home-md: 1.875rem;
+
+  --margin-h2-about-sm-top: 1.25rem;
+  --margin-p-about-sm: 0.625rem;
+  --margin-img-about-sm: 1.25rem;
+
+  --margin-h2-about-md-top: 2.5rem;
+  --margin-p-about-md: 1.25rem;
+  --margin-img-about-y: 1.875rem;
+  --margin-img-about-x: 3.125rem;
+
+  --margin-h2-about-lg-top: 0.625rem;
+  --margin-p-about-lg: 1.25rem;
+  --margin-img-about-lg-y: 0.625rem;
+  --margin-img-about-lg-x: 3.75rem;
+
+  --margin-h1-form-sm-y: 1.875rem;
+  --gap-form-form-sm: 2.5rem;
+  --margin-form-form-sm-bottom: 4.9375rem;
+  --margin-botton-form-sm-bottom: 1.25rem;
+
+  --margin-h1-form-md-y: 1.25rem;
+  --gap-form-form-md: 1.875rem;
+  --margin-form-form-md-x: 12.5rem;
+  --margin-form-form-md-bottom: 2.375rem;
+  --margin-botton-form-md-bottom: 1.25rem;
+
+  --margin-h1-form-lg-y: 1.25rem;
+  --gap-form-form-lg: 3.125rem;
+  --margin-form-form-lg-y: 1.25rem;
+  --margin-form-form-lg-x: 6.25rem;
+  --margin-form-checkbox-lg-bottom: 0.875rem;
+  --margin-form-lg-bottom: 1.4375rem;
+
+  --align-home: center;
+  --align-about: center;
+  --align-form-h1-sm: center;
+  --align-form-inputs-sm: flex-start;
+  --align-form-inputs-md: center;
+  --align-form-inputs-lg: flex-start;
+  --align-form-checkbox: center;
+  --align-form-button: center;
+
+  --justify-home: center;
+  --justify-about: center;
+  --justify-form-h1: center;
+  --justify-form-inputs-sm: center;
+  --justify-form-inputs-md: center;
+  --justify-form-inputs-lg: left;
+  --justify-form-checkbox: center;
+  --justify-form-button: center;
 }
 
 * {
