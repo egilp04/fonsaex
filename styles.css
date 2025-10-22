@@ -1,21 +1,53 @@
 @import "./vars.css";
 
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-}
-
-section {
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-primary);
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav {
+  color: var(--color-base);
+  font-family: var(--font-nav);
+  font-weight: var(--font-weight-nav);
+  letter-spacing: var(--letter-spacing-nav);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--nav-gap);
+  font-size: var(--font-nav-lg);
+  line-height: var(--line-height-nav-lg);
+  margin: var(--nav-top-lg) var(--nav-right-lg) var(--nav-bottom-lg) 0;
 }
 
-footer {
+.logo {
+  margin-left: var(--nav-left);
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  font-family: var(--font-footer);
+  font-weight: var(--font-weight-footer);
+  letter-spacing: var(--letter-spacing-footer);
+  font-size: var(--font-footer-lg);
+  line-height: var(--line-height-footer-lg);
+  padding: var(--padding-footer);
+  background-color: var(--color-primary);
+  text-align: center;
+  color: var(--color-base);
 }
 
 h1 {
@@ -30,13 +62,50 @@ p {
 }
 
 label {
+  color: var(--color-primary);
 }
 
 input {
+  color: var(--color-primary);
+}
+
+input:disabled {
+  color: var(--color-disabled);
+}
+
+input:focus {
+}
+
+inpout:hover {
+  color: var(--color-accent);
 }
 
 a {
 }
 
 button {
+}
+
+@media (max-width: 480px) {
+  nav {
+    font-size: var(--font-nav-sm);
+    line-height: var(--line-height-nav-sm);
+    margin-right: var(--nav-right-sm);
+  }
+  .footer {
+    font-size: var(--font-footer-sm);
+    line-height: var(--line-height-footer-sm);
+  }
+}
+
+@media (min-width: 480px) and (max-width: 960px) {
+  nav {
+    font-size: var(--font-nav-md);
+    line-height: var(--line-height-nav-md);
+    margin-right: var(--nav-right-md);
+  }
+  .footer {
+    font-size: var(--font-footer-md);
+    line-height: var(--line-height-footer-md);
+  }
 }

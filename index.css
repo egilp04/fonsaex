@@ -1,17 +1,31 @@
 @import "./vars.css";
 @import "./styles.css";
 
-hero {
+section {
 }
 
-card {
-}
-card img {
-}
-
-card footer {
+h1 {
+  font-size: var(--font-h1-sm);
 }
 
-card h2 {
+h2 {
 }
+
+h3 {
+}
+p {
+}
+
+label {
+}
+
+input {
+}
+
+a {
+}
+
+button {
+}
+
 //se llama h2 pero en diseño es h3
