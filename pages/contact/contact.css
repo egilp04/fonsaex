@@ -2,3 +2,22 @@
 @import "../../styles.css";
 
 //Grid cuando la pantlla es x tamaño
+
+label {
+  color: var(--color-primary);
+}
+
+input {
+  color: var(--color-primary);
+}
+
+input:disabled {
+  color: var(--color-disabled);
+}
+
+input:focus {
+}
+
+input:hover {
+  color: var(--color-accent);
+}

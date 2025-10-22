@@ -1,31 +1,45 @@
 @import "./vars.css";
 @import "./styles.css";
 
-section {
+.hero {
+  width: 100%;
+  height: auto;
+  margin: var(--margin-hero-home-lg);
 }
-
 h1 {
-  font-size: var(--font-h1-sm);
+  margin: var(--margin-h1-home-lg-y) 0 var(--margin-h1-home-lg-y) 0;
 }
 
 h2 {
-}
-
-h3 {
-}
-p {
-}
-
-label {
-}
-
-input {
-}
-
-a {
+  font-size: var(--fonts-service-text-lg);
 }
 
 button {
 }
 
-//se llama h2 pero en diseño es h3
+@media (max-width: 480px) {
+  h1 {
+    font-size: var(--font-h1-sm);
+    margin: var(--margin-h1-home-sm-y) 0 var(--margin-h1-home-sm-y) 0;
+  }
+  h2 {
+    font-size: var(--fonts-service-text-sm);
+  }
+  .hero {
+    margin: var(--margin-hero-home-sm-xy);
+  }
+}
+
+@media (min-width: 480px) and (max-width: 960px) {
+  h1 {
+    font-size: var(--font-h1-md);
+    margin: var(--margin-h1-home-md-y) 0 var(--margin-h1-home-md-y) 0;
+  }
+  h2 {
+    font-size: var(--fonts-service-text-md);
+  }
+  .hero {
+    margin: var(--margin-hero-home-md-top) var(--margin-hero-home-md-x)
+      var(--margin-hero-home-md-button) var(--margin-hero-home-md-x);
+  }
+}

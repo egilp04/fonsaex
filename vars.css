@@ -10,26 +10,26 @@
   --font-Poppins: "Poppins", sans-serif;
   --font-Fraunces: "Fraunces", serif;
 
-  --fonts-h1-s: 4rem;
+  --fonts-h1-sm: 4rem;
   --fonts-h1-md: 6rem;
   --font-h1-lg: 8rem;
 
-  --fonts-h2-s: 2rem;
-  --fonts-h2-md: 3rem;
-  --font-h2-lg: 3rem;
+  --fonts-h2-sm: 4rem;
+  --fonts-h2-md: 6rem;
+  --font-h2-lg: 8rem;
 
-  --fonts-h3-s: 1rem;
-  --fonts-h3-md: 1.5rem;
-  --font-h3-lg: 1.5rem;
+  --fonts-service-text-sm: 1.5rem;
+  --fonts-service-text-md: 2rem;
+  --fonts-service-text-lg: 2.25rem;
 
-  --font-p-s: 1rem;
+  --font-p-sm: 1rem;
   --font-p-md: 1rem;
   --font-p-lg: 1.5rem;
 
-  --font-weight-h1: bold;
-  --font-weight-h2: medium;
-  --font-weight-h3: normal;
-  --font-weight-p: 300;
+  --font-weight-bold: bold;
+  --font-weight-medium: medium;
+  --font-weight-normal: normal;
+  --font-weight-ligth: 300;
   --font-weight-label: medium;
 
   --font-label-s: 1.25rem;
@@ -95,19 +95,21 @@
   --card-font-size-md: 2rem;
   --card-font-size-lg: 2.25rem;
 
-  --margin-hero-home-sm: 0.625rem;
-  --hero-gap-sm: 0.625rem;
+  --margin-hero-home-sm-xy: 0.625rem;
+  --margin-h1-home-sm-y: 0.625rem;
   --margin-services-home-sm: 1.25rem;
   --gap-services-home-sm: 1.25rem;
 
-  --margin-hero-home-md: 1.5rem;
-  --hero-gap-md: 1.25rem;
+  --margin-hero-home-md-y: 1.5rem;
+  --margin-hero-home-md-top: 1.5rem;
+  --margin-hero-home-md-button: 0.625rem;
+  --margin-h1-home-md-y: 1.5rem;
   --margin-services-home-md: 1.5rem;
   --gap-services-home-md: 1.5rem;
 
-  --margin-hero-home-lg-x: 2.5rem;
   --margin-hero-home-lg-y: 0.625rem;
-  --hero-gap-lg: 0.625rem;
+  --margin-hero-home-lg-x: 2.5rem;
+  --margin-h1-home-lg-y: 0.625rem;
   --margin-services-home-lg-x: 2.5rem;
   --margin-services-home-lg-y: 1.25rem;
   --gap-services-home-md: 1.875rem;
