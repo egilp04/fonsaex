@@ -9,11 +9,11 @@
   </head>
   <body>
     <header>
-      <img />
+      <img class="logo" src="/src/img/logo.webp" />
       <nav>
-        <a>Inicio</a>
-        <a>Sobre Nosotros</a>
-        <a>Contacto</a>
+        <a href="/index.html">Inicio</a>
+        <a href="./about.html">Sobre Nosotros</a>
+        <a href="../contact/contact.html">Contacto</a>
       </nav>
     </header>
     <main>
@@ -29,14 +29,21 @@
       </section>
       <section>
         <h2>Donde estamos</h2>
-        <img />
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps?q=38.9800093,-5.7930066&z=17&output=embed"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>
+    <footer class="footer">
+      <address>
         FONSAEX S.L. Calle Miraflores, 138, 06700 Villanueva de la Serena,
         Badajoz fonsaex@hotmail.com Tel.: 924840981
-      </p>
+      </address>
     </footer>
   </body>
 </html>
