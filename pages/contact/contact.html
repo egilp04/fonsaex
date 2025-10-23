@@ -27,42 +27,56 @@
       >
         <div class="input-container">
           <label for="username">Nombre</label>
-          <input type="text" name="username" placeholder="nombre" />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="nombre"
+          />
         </div>
 
         <div class="input-container">
           <label for="surnames">Apellidos</label>
-          <input type="text" name="surnames" placeholder="apellidos" />
+          <input
+            type="text"
+            name="surnames"
+            id="surnames"
+            placeholder="apellidos"
+          />
         </div>
 
         <div class="input-container">
           <label for="telf">Teléfono</label>
-          <input type="text" name="telf" placeholder="telefono" />
+          <input type="text" name="telf" id="telf" placeholder="telefono" />
         </div>
 
         <div class="input-container">
           <label for="subject">Motivo</label>
-          <input type="text" name="subject" placeholder="motivo" />
+          <input type="text" name="subject" id="subject" placeholder="motivo" />
         </div>
 
         <div class="input-container">
           <label for="email">Email</label>
-          <input type="email" name="email" placeholder="email" />
+          <input type="email" name="email" id="email" placeholder="email" />
         </div>
 
         <div class="input-container">
           <label for="message">Mensaje</label>
-          <textarea name="message" placeholder="Mensaje"></textarea>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Mensaje"
+          ></textarea>
         </div>
 
         <div class="contactPreference-container">
           <label for="contact">Preferencia de Contacto</label>
-          <div class="checkbox-container">
+          <div class="checkbox-container" id="contact">
             <div>
               <input
                 type="checkbox"
                 id="contact-email"
-                name="contact-preference"
+                name="contact-email"
                 value="email"
               />
               <label for="contact-email">Email</label>
@@ -71,7 +85,7 @@
               <input
                 type="checkbox"
                 id="contact-phone"
-                name="contact-preference"
+                name="contact-phone"
                 value="phone"
               />
               <label for="contact-phone">Teléfono</label>
