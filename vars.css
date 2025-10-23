@@ -12,15 +12,12 @@
   /* fonts */
   --font-Poppins: "Poppins", sans-serif;
   --font-Fraunces: "Fraunces", serif;
-
   --font-h1-sm: 1.5rem;
   --font-h1-md: 2.5rem;
   --font-h1-lg: 4rem;
-
   --font-h2-sm: 1.5rem;
   --font-h2-md: 2.5rem;
   --font-h2-lg: 4rem;
-
   --font-label-sm: 0.75rem;
   --font-label-md: 1rem;
   --font-label-lg: 1.25rem;
@@ -28,7 +25,6 @@
   --font-button-sm: 0.5rem;
   --font-button-md: 0.75rem;
   --font-button-lg: 1rem;
-
   --fonts-service-title-sm: 0.5rem;
   --fonts-service-title-md: 0.75rem;
   --fonts-service-title-lg: 1rem;
