@@ -13,29 +13,29 @@
   --font-Poppins: "Poppins", sans-serif;
   --font-Fraunces: "Fraunces", serif;
 
-  --font-h1-sm: 4rem;
-  --font-h1-md: 6rem;
-  --font-h1-lg: 8rem;
+  --font-h1-sm: 1.5rem;
+  --font-h1-md: 2.5rem;
+  --font-h1-lg: 4rem;
 
-  --font-h2-sm: 4rem;
-  --font-h2-md: 6rem;
-  --font-h2-lg: 8rem;
+  --font-h2-sm: 1.5rem;
+  --font-h2-md: 2.5rem;
+  --font-h2-lg: 4rem;
 
   --font-label-sm: 1.25rem;
   --font-label-md: 1rem;
   --font-label-lg: 1.25rem;
 
-  --font-button-sm: 0.875rem;
-  --font-button-md: 1rem;
-  --font-button-lg: 1.25rem;
+  --font-button-sm: 0.5rem;
+  --font-button-md: 0.75rem;
+  --font-button-lg: 1rem;
 
-  --fonts-service-title-sm: 1.5rem;
-  --fonts-service-title-md: 2rem;
-  --fonts-service-title-lg: 2.25rem;
+  --fonts-service-title-sm: 0.5rem;
+  --fonts-service-title-md: 0.75rem;
+  --fonts-service-title-lg: 1rem;
 
-  --font-p-sm: 1.5rem;
-  --font-p-md: 2rem;
-  --font-p-lg: 2rem;
+  --font-p-sm: 0.75rem;
+  --font-p-md: 1rem;
+  --font-p-lg: 1.5rem;
 
   --font-weight-bold: bold;
   --font-weight-medium: medium;
@@ -94,6 +94,8 @@
   --padding-48: 3rem;
   --padding-50: 3.125rem;
   --padding-60: 3.75rem;
+  --padding-100: 6.25rem;
+  --padding-200: 12.5rem;
 
   /* margins */
   --margin-2: 0.125rem;

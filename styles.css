@@ -7,6 +7,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--color-base);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -49,9 +52,13 @@ nav {
   background-color: var(--color-primary);
   text-align: center;
   color: var(--color-base);
-  margin-bottom: 0;
   padding: var(--padding-10);
-  max-width: 100%;
+  width: 100%;
+}
+
+main {
+  flex: 1 1 auto;
+  overflow: auto;
 }
 
 .footer address {
@@ -102,6 +109,7 @@ input {
   font-size: var(--font-label-lg);
   padding: var(--padding-8) var(--padding-14);
   border-radius: var(--border-radius);
+  width: 100%;
 }
 input:hover {
   border-color: var(--color-accent);
