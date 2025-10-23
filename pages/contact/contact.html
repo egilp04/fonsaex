@@ -17,54 +17,66 @@
       </nav>
     </header>
     <main>
-      <h1>formulario de Contacto</h1>
-      <form name="form" id="form" class="form" method="post" action="">
+      <h1>Formulario de Contacto</h1>
+      <form
+        name="form"
+        id="form"
+        class="form-container"
+        method="post"
+        action=""
+      >
         <div class="input-container">
           <label for="username">Nombre</label>
-          <input type="text" name="username" />
+          <input type="text" name="username" placeholder="nombre" />
         </div>
 
         <div class="input-container">
           <label for="surnames">Apellidos</label>
-          <inpu type="text" name="surnames" />
+          <input type="text" name="surnames" placeholder="apellidos" />
         </div>
 
         <div class="input-container">
           <label for="telf">Teléfono</label>
-          <input type="text" name="telf" />
+          <input type="text" name="telf" placeholder="telefono" />
         </div>
 
         <div class="input-container">
           <label for="subject">Motivo</label>
-          <input type="text" name="subject" />
+          <input type="text" name="subject" placeholder="motivo" />
         </div>
 
         <div class="input-container">
           <label for="email">Email</label>
-          <input type="email" name="email" />
+          <input type="email" name="email" placeholder="email" />
         </div>
 
         <div class="input-container">
           <label for="message">Mensaje</label>
-          <textarea name="message"></textarea>
+          <textarea name="message" placeholder="mensaje"></textarea>
         </div>
 
-        <div class="input-container">
+        <div class="contactPreference-container">
           <label for="contact">Preferencia de Contacto</label>
-          <input
-            type="checkbox"
-            id="contact-email"
-            name="contact-preference"
-            value="email"
-          />
-          <label for="contact-email">Email</label>
-          <input
-            type="checkbox"
-            id="contact-phone"
-            name="contact-preference"
-            value="phone"
-          />
-          <label for="contact-phone">Teléfono</label>
+          <div class="checkbox-container">
+            <div>
+              <input
+                type="checkbox"
+                id="contact-email"
+                name="contact-preference"
+                value="email"
+              />
+              <label for="contact-email">Email</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="contact-phone"
+                name="contact-preference"
+                value="phone"
+              />
+              <label for="contact-phone">Teléfono</label>
+            </div>
+          </div>
         </div>
 
         <button>Enviar</button>

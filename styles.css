@@ -1,11 +1,12 @@
 @import "./vars.css";
 
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   background-color: var(--color-base);
-  min-height: 100vh;
 }
 
 header {
@@ -100,6 +101,7 @@ input {
   font-weight: var(--font-weight-medium);
   font-size: var(--font-label-lg);
   padding: var(--padding-8) var(--padding-14);
+  border-radius: var(--border-radius);
 }
 input:hover {
   border-color: var(--color-accent);
@@ -122,6 +124,20 @@ h1 {
 h1 {
   font-size: var(--font-h1-lg);
 }
+textarea {
+  font-family: var(--font-Poppins);
+  font-weight: var(--font-weight-ligth);
+  font-size: var(--font-label-lg);
+  color: var(--color-primary);
+  background-color: transparent;
+  border: 1px solid var(--color-disabled);
+  resize: vertical;
+  min-height: 200px;
+  min-width: 100%;
+}
+textarea::placeholder {
+  text-align: center;
+}
 
 @media (max-width: 480px) {
   nav {
@@ -136,12 +152,12 @@ h1 {
     margin: var(--margin-hero-home-sm);
     width: var(--width-20);
   }
-  .label {
+  label {
     font-size: var(--font-label-sm);
   }
   input {
     font-size: var(--font-label-sm);
-    padding: var(--padding-4) var(--padding-8);
+    padding: var(--padding-6) var(--padding-10);
   }
   button {
     padding: var(--padding-8) var(--padding-24);
@@ -162,7 +178,7 @@ h1 {
     margin: var(--margin-hero-home-md);
     width: var(--width-20);
   }
-  .label {
+  label {
     font-size: var(--font-label-md);
   }
   input {

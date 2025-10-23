@@ -27,7 +27,7 @@ p {
 .map-wrapper {
   margin-top: -16px;
   padding: 0 var(--padding-60) var(--padding-30) var(--padding-60);
-  max-width: 100%;
+  width: 100%;
   box-sizing: border-box;
   height: auto;
 }
