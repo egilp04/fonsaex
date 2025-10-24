@@ -7,39 +7,101 @@
   margin: var(--margin-hero-home-lg);
 }
 h1 {
-  margin: var(--margin-h1-home-lg-y) 0 var(--margin-h1-home-lg-y) 0;
+  margin-bottom: var(--margin-20);
 }
 
-h2 {
-  font-size: var(--fonts-service-text-lg);
+span {
+  font-size: var(--fonts-service-title-lg);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-Poppins);
+}
+.services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.services-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  gap: var(--gap-20);
+  width: 100%;
+  height: auto;
+  padding: var(--padding-30);
+  overflow: hidden;
 }
 
-button {
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-secondary);
+  width: 100%;
+}
+.service-img-container {
+  width: 100%;
+  height: 100%;
+  padding: 0 var(--padding-30);
+}
+
+.service-img-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.service-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-20);
+  background-color: var(--color-card);
+  width: 100%;
+  gap: var(--gap-10);
 }
 
 @media (max-width: 480px) {
   h1 {
     font-size: var(--font-h1-sm);
-    margin: var(--margin-h1-home-sm-y) 0 var(--margin-h1-home-sm-y) 0;
   }
-  h2 {
-    font-size: var(--fonts-service-text-sm);
+  span {
+    font-size: var(--fonts-service-title-sm);
   }
   .hero {
     margin: var(--margin-hero-home-sm-xy);
   }
+  .services-card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: var(--gap-20);
+    width: 100%;
+    height: auto;
+    padding: var(--padding-20);
+  }
 }
-
-@media (min-width: 480px) and (max-width: 960px) {
+@media (min-width: 480px) and (max-width: 1200px) {
   h1 {
     font-size: var(--font-h1-md);
     margin: var(--margin-h1-home-md-y) 0 var(--margin-h1-home-md-y) 0;
   }
-  h2 {
-    font-size: var(--fonts-service-text-md);
+  span {
+    font-size: var(--fonts-service-title-md);
   }
   .hero {
     margin: var(--margin-hero-home-md-top) var(--margin-hero-home-md-x)
       var(--margin-hero-home-md-button) var(--margin-hero-home-md-x);
+  }
+  .services-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: var(--gap-30);
+    width: 100%;
+    height: auto;
+    padding: var(--padding-30);
   }
 }

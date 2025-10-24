@@ -15,6 +15,7 @@ h2 {
   font-size: var(--font-h2-lg);
   font-family: var(--font-Fraunces);
   font-weight: var(--font-weight-bold);
+  margin: var(--margin-20) 0;
 }
 p {
   margin-top: -16px;
@@ -25,7 +26,6 @@ p {
 }
 
 .map-wrapper {
-  margin-top: -16px;
   padding: 0 var(--padding-60) var(--padding-30) var(--padding-60);
   width: 100%;
   box-sizing: border-box;
@@ -50,6 +50,7 @@ p {
   }
   .map-wrapper {
     padding: var(--padding-20);
+    margin-top: -16px;
   }
 
   .map-wrapper iframe {
@@ -57,7 +58,7 @@ p {
   }
 }
 
-@media (min-width: 480px) and (max-width: 960px) {
+@media (min-width: 480px) and (max-width: 1200px) {
   h2 {
     font-size: var(--font-h2-md);
   }
@@ -67,6 +68,7 @@ p {
 
   .map-wrapper {
     padding: var(--padding-40) var(--padding-50);
+    margin-top: -16px;
   }
 
   .map-wrapper iframe {

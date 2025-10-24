@@ -25,7 +25,7 @@
         method="post"
         action=""
       >
-        <div class="input-container">
+        <div class="input-container col-1">
           <label for="username">Nombre</label>
           <input
             type="text"
@@ -35,7 +35,7 @@
           />
         </div>
 
-        <div class="input-container">
+        <div class="input-container col-1">
           <label for="surnames">Apellidos</label>
           <input
             type="text"
@@ -45,22 +45,22 @@
           />
         </div>
 
-        <div class="input-container">
-          <label for="telf">Teléfono</label>
+        <div class="input-container col-1">
+          <label for="telf">Teléfono de contacto</label>
           <input type="text" name="telf" id="telf" placeholder="telefono" />
         </div>
 
-        <div class="input-container">
+        <div class="input-container col-1">
+          <label for="email">Correo de contacto</label>
+          <input type="email" name="email" id="email" placeholder="email" />
+        </div>
+
+        <div class="input-container col-2">
           <label for="subject">Motivo</label>
           <input type="text" name="subject" id="subject" placeholder="motivo" />
         </div>
 
-        <div class="input-container">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="email" />
-        </div>
-
-        <div class="input-container">
+        <div class="input-container col-2">
           <label for="message">Mensaje</label>
           <textarea
             name="message"
@@ -69,7 +69,7 @@
           ></textarea>
         </div>
 
-        <div class="contactPreference-container">
+        <div class="contactPreference-container col-2">
           <label for="contact">Preferencia de Contacto</label>
           <div class="checkbox-container" id="contact">
             <div>
@@ -93,13 +93,15 @@
           </div>
         </div>
 
-        <button>Enviar</button>
+        <button class="col-2">Enviar</button>
       </form>
     </main>
     <footer class="footer">
       <address>
-        FONSAEX S.L. Calle Miraflores, 138, 06700 Villanueva de la Serena,
-        Badajoz fonsaex@hotmail.com Tel.: 924840981
+        FONSAEX S.L. 
+        Calle Miraflores, 138, 06700 Villanueva de la Serena, Badajoz 
+        Email: fonsaex@hotmail.com
+        Tel.: 924840981
       </address>
     </footer>
   </body>

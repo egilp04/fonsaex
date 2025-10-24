@@ -20,6 +20,8 @@ header {
   align-items: center;
   padding: 0 var(--padding-10) 0 var(--padding-8);
   max-width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 nav {
@@ -58,7 +60,7 @@ nav {
 
 main {
   flex: 1 1 auto;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .footer address {
@@ -80,6 +82,7 @@ button {
   font-size: var(--font-button-lg);
   color: var(--color-base);
   border-radius: var(--border-radius);
+  border: none;
 }
 
 button:hover {
@@ -94,7 +97,7 @@ button:disabled {
 
 label {
   font-family: var(--font-Poppins);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-500);
   font-size: var(--font-label-lg);
   color: var(--color-primary);
 }
@@ -102,25 +105,86 @@ label {
 input {
   background-color: transparent;
   color: var(--color-disabled);
-  border: 1px solid var(--color-disabled);
+  border: 2px solid var(--color-disabled);
   cursor: text;
   font-family: var(--font-Poppins);
   font-weight: var(--font-weight-medium);
   font-size: var(--font-label-lg);
   padding: var(--padding-8) var(--padding-14);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-input);
 }
-input:hover {
+input:not(:focus):not(:disabled):hover,
+textarea:not(:focus):not(:disabled):hover {
   border-color: var(--color-accent);
+  cursor: pointer;
 }
-input:disabled {
+input:disabled,
+textarea:disabled {
   border-color: var(--color-disabled);
   background-color: transparent;
   cursor: not-allowed;
 }
-input:focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
+input:focus-visible,
+textarea:focus-visible,
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: none;
+  cursor: text;
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-disabled);
+  opacity: 1; /* sobreescribe la opacidad por defecto del navegador */
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: var(--color-disabled);
+  opacity: 1;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: var(--color-disabled);
+  opacity: 1;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: var(--color-disabled);
+  opacity: 1;
+}
+
+textarea {
+  font-family: var(--font-Poppins);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-label-lg);
+  color: var(--color-primary);
+  background-color: transparent;
+  border: 2px solid var(--color-disabled);
+  resize: vertical;
+  min-height: 200px;
+  min-width: 100%;
+  border-radius: var(--border-radius-input);
+  text-align: center;
+}
+
+textarea::placeholder {
+  font-family: var(--font-Poppins);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-label-lg);
+}
+textarea::-webkit-input-placeholder {
+  font-family: var(--font-Poppins);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-label-lg);
+  color: var(--color-disabled);
+}
+textarea::-moz-placeholder {
+  font-family: var(--font-Poppins);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-label-lg);
+  color: var(--color-disabled);
 }
 
 h1 {
@@ -130,20 +194,6 @@ h1 {
 }
 h1 {
   font-size: var(--font-h1-lg);
-}
-textarea {
-  font-family: var(--font-Poppins);
-  font-weight: var(--font-weight-ligth);
-  font-size: var(--font-label-lg);
-  color: var(--color-primary);
-  background-color: transparent;
-  border: 1px solid var(--color-disabled);
-  resize: vertical;
-  min-height: 200px;
-  min-width: 100%;
-}
-textarea::placeholder {
-  text-align: center;
 }
 
 @media (max-width: 480px) {
@@ -170,9 +220,18 @@ textarea::placeholder {
     padding: var(--padding-8) var(--padding-24);
     font-size: var(--font-button-sm);
   }
+  textarea::placeholder {
+    font-size: var(--font-label-sm);
+  }
+  textarea::-webkit-input-placeholder {
+    font-size: var(--font-label-sm);
+  }
+  textarea::-moz-placeholder {
+    font-size: var(--font-label-sm);
+  }
 }
 
-@media (min-width: 480px) and (max-width: 960px) {
+@media (min-width: 480px) and (max-width: 1200px) {
   nav {
     font-size: var(--font-nav-md);
     line-height: var(--line-height-nav-md);
@@ -195,5 +254,14 @@ textarea::placeholder {
   button {
     padding: var(--padding-8) var(--padding-32);
     font-size: var(--font-button-md);
+  }
+  textarea::placeholder {
+    font-size: var(--font-label-md);
+  }
+  textarea::-webkit-input-placeholder {
+    font-size: var(--font-label-md);
+  }
+  textarea::-moz-placeholder {
+    font-size: var(--font-label-md);
   }
 }
