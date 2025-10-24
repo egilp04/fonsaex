@@ -71,7 +71,7 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: var(--color-accent);
+  color: var(--color-base);
 }
 
 button {
