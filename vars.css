@@ -14,7 +14,7 @@
   --font-Fraunces: "Fraunces", serif;
 
   /* font sizes*/
-  --font-h1-sm: 1.5rem;
+  --font-h1-sm: 1.75rem;
   --font-h1-md: 3rem;
   --font-h1-lg: 4rem;
   --font-h2-sm: 1.5rem;
@@ -80,8 +80,11 @@
   --padding-48: 3rem;
   --padding-50: 3.125rem;
   --padding-60: 3.75rem;
+  --padding-90: 5.625rem;
   --padding-100: 6.25rem;
   --padding-200: 10rem;
+  --padding-80: 5rem;
+  --padding-120: 7.5rem;
 
   /* margins */
   --margin-2: 0.125rem;
@@ -104,6 +107,7 @@
   --margin-79: 4.9375rem;
   --margin-100: 6.25rem;
   --margin-200: 12.5rem;
+  --margin-90: 5.625rem;
 
   /* gaps */
   --gap-4: 0.25rem;
