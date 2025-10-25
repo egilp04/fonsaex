@@ -68,10 +68,14 @@ main {
 }
 
 a {
+  color: var(--color-base);
   text-decoration: none;
 }
 a:visited {
   color: var(--color-base);
+}
+a:hover {
+  color: var(--color-accent);
 }
 
 button {
