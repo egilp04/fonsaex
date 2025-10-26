@@ -45,12 +45,10 @@ p {
   p {
     font-size: var(--font-p-sm);
     padding: var(--padding-10);
-    margin-top: -1rem;
   }
   .map-wrapper {
     padding: var(--padding-20) var(--padding-20) var(--padding-30)
       var(--padding-20);
-    margin-top: -16px;
   }
 
   .map-wrapper iframe {
@@ -64,17 +62,25 @@ p {
   }
   p {
     font-size: var(--font-p-md);
-    margin-top: -1rem;
   }
   main > section:last-child {
-    margin-top: -1rem;
+    margin-top: var(--margin--1);
   }
   .map-wrapper {
     padding: var(--padding-40) var(--padding-50);
-    margin-top: -16px;
   }
 
   .map-wrapper iframe {
     height: 338px;
+  }
+}
+
+@media (max-width: 1200px) {
+  p {
+    margin-top: var(--margin--1);
+  }
+  .map-wrapper {
+    padding: var(--padding-40) var(--padding-50);
+    margin-top: var(--margin--1);
   }
 }
