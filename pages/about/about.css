@@ -27,6 +27,7 @@ p {
   width: 100%;
   box-sizing: border-box;
   height: auto;
+  margin: var(--margin-20) 0;
 }
 
 .map-wrapper iframe {
