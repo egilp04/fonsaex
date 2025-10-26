@@ -11,7 +11,7 @@ main {
 
 h1 {
   font-size: var(--font-h1-lg);
-  margin-bottom: var(--margin-40);
+  margin: var(--margin-30);
 }
 
 .form-container {
