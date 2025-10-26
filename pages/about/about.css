@@ -63,9 +63,7 @@ p {
   p {
     font-size: var(--font-p-md);
   }
-  main > section:last-child {
-    margin-top: var(--margin--1);
-  }
+
   .map-wrapper {
     padding: var(--padding-40) var(--padding-50);
   }
@@ -77,10 +75,9 @@ p {
 
 @media (max-width: 1200px) {
   p {
-    margin-top: var(--margin--1);
+    margin-top: var(--margin--16);
   }
-  .map-wrapper {
-    padding: var(--padding-40) var(--padding-50);
-    margin-top: var(--margin--1);
+  main > section:last-child {
+    margin-top: var(--margin--16);
   }
 }
